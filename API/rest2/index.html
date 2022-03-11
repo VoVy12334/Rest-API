@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Quản lý người dùng</title>
+    <style>
+        th {
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body onload="LoadListUser();">
+    
+    <div class="form_DS">
+        <h2>Danh Sách Quản Lý</h2>
+        <div class="table_quanly">
+            <table border="1" style="margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Fullname</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="ds-u"></tbody>
+            </table>
+        </div>
+        <div class="form_Info">
+            <form id="form_edit" action="#">
+                <div class="Information">
+                    <input type="text" name="username" placeholder="Nhập username" required pattern="[a-z]{1,15}"  style="margin-top: 10px;"/> <br>
+                    <input type="text" name="fullname" placeholder="Nhập họ tên" style="margin-top: 10px;" /> <br>
+                    <input type="email" name="email"  placeholder="Nhập email" style="margin-top: 10px;" />
+                </div>
+                <div class="btn_all">
+                    <button id="btnsave" type="submit" data-toggle="collapse" data-target="btnupdate" onclick="SaveNew()">Save</button> 
+                    <button id="btnupdate" class="collapse"  type="submit" onclick="SaveUpdate()">Update</button>
+                </div>   
+            </form>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    
+</body>
+
+</html>

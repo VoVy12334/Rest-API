@@ -1,0 +1,58 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: antiquewhite;
+}
+.form_DS{
+    border-block: revert;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    padding: 6rem;
+    background: rgb(204 95 95 / 28%);
+    box-shadow: 0 15px 25px rgb(0 0 0 / 50%);
+    font-size: medium;
+    color: black;
+    
+}
+
+.form_DS h2{
+    text-align: center;
+}
+
+#form_edit .Information{
+    width: 100%;
+    padding: -18px 20px;
+    margin: 6px 0;
+    box-sizing: border-box
+}
+
+#btnsave{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+#btnsave:hover{
+   background-color: indianred;
+    opacity: 1.2;
+}
+#btnupdate{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+#btnupdate:hover{
+    background-color: indianred;
+    opacity: 1.2;
+}
+
